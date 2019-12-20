@@ -1,8 +1,8 @@
 {
-  "name": "osu-tourney-web",
+  "name": "osu-cat-toolbox",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/edisonlee55/osu-tourney-web.git",
+  "repository": "https://github.com/edisonlee55/osu-cat-toolbox.git",
   "author": "Edison Lee <edisonlee@edisonlee55.com>",
   "license": "MIT",
   "dependencies": {
