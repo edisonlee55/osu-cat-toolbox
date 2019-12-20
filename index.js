@@ -21,8 +21,11 @@ app.use(
 app.get("/redirect", function(req, res) {
   let state = req.query["state"];
   if (state == "auth") {
-    if (req.query["error" == "access_denied"]) {
+    if (req.query["error"] == "access_denied") {
       console.error("Access denied. User deny the request.");
+      res.sendStatus(403);
+    } else if(req.query["error"]) {
+      console.error("osu!api Error");
       res.sendStatus(403);
     } else {
       let userAuthCode = req.query["code"];
